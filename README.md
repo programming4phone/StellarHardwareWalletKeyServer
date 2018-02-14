@@ -19,11 +19,11 @@ This project was developed using Java 8, Spring Boot, Spring Data JPA, HSQLDB, E
 
 ## Prerequisites
 
-The project requires a predefined HSQLDB database. The database must reside in a folder named `db/wallet.temp`.
+The project requires a predefined HSQLDB database. The database must reside in a folder named `db/wallet.temp`. It is include in this project.
 
 ## Build
 
-Prior to building, the Angular compiled code located in the `dist/` directory needs to be copied into this project's `resources\static` directory.
+Prior to building, the Angular compiled code, from the Stellar Hardware Wallet Angular App project, located in the `dist/` directory needs to be copied into this project's `resources\static` directory.
 
 Run `mvn clean install` to build the project and run the supplied integration tests. The build artifacts will be stored in the `target/` directory. 
 
