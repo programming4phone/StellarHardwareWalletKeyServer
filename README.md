@@ -35,19 +35,19 @@ The final executable from this project is meant to be run from a flash drive. Th
 
 The format of the files on the flash drive E: are as follows:
 
-`E:`
-`-- wallet`
-`---- db`
-`------ wallet.tmp`
-`------ wallet.lck`
-`------ wallet.log`
-`------ wallet.properties`
-`------ wallet.script`
-`---- jre`
-`------ bin`
-`------ lib`
-`-- hardware.wallet-0.0.1-POC.jar`
-`-- runWallet.cmd`
+`E:`<br/>
+`-- wallet`<br/>
+`---- db`<br/>
+`------ wallet.tmp`<br/>
+`------ wallet.lck`<br/>
+`------ wallet.log`<br/>
+`------ wallet.properties`<br/>
+`------ wallet.script`<br/>
+`---- jre`<br/>
+`------ bin`<br/>
+`------ lib`<br/>
+`-- hardware.wallet-0.0.1-POC.jar`<br/>
+`-- runWallet.cmd`<br/>
 
 The `db` directory containing an initialized HSQLDB database is provided with this project.
 The `jre` directory comes from a local installation of the Java SDK. For example, it is a copy of the folder `C:\Program Files\Java\jre1.8.0_162` renamed to `jre`.
