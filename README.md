@@ -31,4 +31,23 @@ Run `mvn clean install` to build the project and run the supplied integration te
 Change to the source code directory and run `java -jar target/wallet.api-0.0.1-POC.jar`.
 
 ## Flash Drive Image
-The final executable from this project is meant to be run from a flash drive. Instructions TBD.
+The final executable from this project is meant to be run from a flash drive. This allows the application to run in total isolation without accessing the internet.
+
+The format of the files on the flash drive E: are as follows:
+
+`E:`
+`-- wallet`
+`---- db`
+`------ wallet.tmp`
+`------ wallet.lck`
+`------ wallet.log`
+`------ wallet.properties`
+`------ wallet.script`
+`---- jre`
+`------ bin`
+`------ lib`
+`-- hardware.wallet-0.0.1-POC.jar`
+`-- runWallet.cmd`
+
+The `db` directory containing an initialized HSQLDB database is provided with this project.
+The `jre` directory comes from a local installation of the Java SDK. For example, it is a copy of the folder `C:\Program Files\Java\jre1.8.0_162` renamed to `jre`.
