@@ -1,8 +1,8 @@
 # Stellar Hardware Wallet Key Server 
 
-This project demonstrates how to securely store the public key / secret seed associated with a Stellar account.  
+This project demonstrates how to securely store a public key and secret seed associated with a Stellar account. Since this codebase is in the "proof of concept" stage, all access is restricted to the Stellar test network.
  
-The public key is stored as a hash and the secret seed is stored as encrytpted ciphertext in an embedded database. Neither key is _ever_ exposed as plaintext.
+Account keys are stored in an embedded database. Keys are obfuscated, either through hashing or encryption, prior to being stored.
 
 Web services implement the following functions:
 - **store keys** -  Store the account keys associated with a specific Stellar account.
@@ -19,7 +19,7 @@ This project was developed using Java 8, Spring Boot, Spring Data JPA, HSQLDB, E
 
 ## Prerequisites
 
-The project requires a predefined HSQLDB database. The database must reside in a folder named `db/wallet.temp`. It is include in this project.
+The project requires a predefined HSQLDB database. The database must reside in a folder named `db/wallet.temp`. It is include within this project's codebase.
 
 ## Build
 
@@ -31,7 +31,7 @@ Run `mvn clean install` to build the project and run the supplied integration te
 Change to the source code directory and run `java -jar target/wallet.api-0.0.1-POC.jar`.
 
 ## Flash Drive Image
-The final executable from this project is meant to be run from a flash drive. This allows the application to run in total isolation without accessing the internet.
+The final executable from this project is targeted to run from a flash drive. This allows the application to run in total isolation without directly accessing the internet.
 
 The format of the files on the flash drive E: are as follows:
 
