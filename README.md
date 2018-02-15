@@ -23,7 +23,7 @@ The project requires a predefined HSQLDB database. The database must reside in a
 
 ## Build
 
-Prior to building, the Angular compiled code, from the Stellar Hardware Wallet Angular App project, located in the `dist/` directory needs to be copied into this project's `resources\static` directory.
+Prior to building, the Angular compiled code, from the Stellar Hardware Wallet Angular App project, located in the `dist/` directory needs to be copied into this project's `resources/static` directory.
 
 Run `mvn clean install` to build the project and run the supplied integration tests. The build artifacts will be stored in the `target/` directory. 
 
