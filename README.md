@@ -52,7 +52,7 @@ The format of the files on the flash drive E: are as follows:
 The `db` directory containing an initialized HSQLDB database is provided with this project.
 The `jre` directory comes from a local installation of the Java SDK. For example, it is a copy of the folder `C:\Program Files\Java\jre1.8.0_162` renamed to `jre`.
 
-To run from the flash drive (assumes E: drive), enter the following commands from the Windows Command prompt:
+To run from the flash drive (assumes E: drive), enter the following commands from the Windows Command prompt:<br/>
 `E:`<br/>
 `cd wallet`<br/>
 `runWallet.cmd`<br/>
